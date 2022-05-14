@@ -2,12 +2,19 @@ package models;
 
 public class Usuario {
 
+	public long id;
 	public String nombre;
 	public String apellido;
 	public String email;
 	public String telefono;
 	public String password;
 
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
 	public String getNombre() {
 		return nombre;
 	}
@@ -38,6 +45,4 @@ public class Usuario {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	
 }
